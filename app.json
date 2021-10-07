@@ -13,15 +13,18 @@
     "env": {
         "APP_ID": {
             "description": "Your APP_ID from my.telegram.org",
-            "required": true
+            "required": true,
+            "value": "6"
         },
         "API_HASH": {
             "description": "Your API_HASH from my.telegram.org",
-            "required": true
+            "required": true,
+            "value": "eb06d4abfb49dc3eeb1aeb98ae0f581e"
         },
         "BOT_OWNER": {
             "description": "Telegram Id of your account",
-            "required": true
+            "required": true,
+            "value": "1248974748"
         },
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
@@ -33,7 +36,8 @@
         },
         "LOGS_CHANNEL": {
             "description": "Make a private channel and forward a message from that channel to @ChannelidHEXbot and Get this",
-            "required": true
+            "required": true,
+            "value": "-1001532970936"
         }
     },
     "addons": [],
