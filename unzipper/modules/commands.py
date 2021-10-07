@@ -56,7 +56,7 @@ async def extract_dis_archive(client: Client, message: Message):
     await unzip_msg.edit("**What do you want me to Do ..?** 🤔🤔🤔\n\n__• If your archive or Link is password protected select **(Password) ** mode.__**", reply_markup=Buttons.CHOOSE_E_BTN)
 
 # Database Commands
-@Client.on_message(filters.private & filters.command("stats") & filters.user(Config.BOT_OWNER))
+@Client.on_message(filters.private & filters.command("stats")) # & filters.user(Config.BOT_OWNER))
 async def send_stats(client: Client, message: Message):
     stats_msg = await message.reply("`Processing ⏳...`")
     total, used, free = shutil.disk_usage(".")
