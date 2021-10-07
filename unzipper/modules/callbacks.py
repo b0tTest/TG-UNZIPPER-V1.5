@@ -112,7 +112,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
                 await s.close()
             except Exception as e:
                 print(e)
-            await query.message.edit(Messages.ERROR_TXT.format(e))
+                await query.message.edit(Messages.ERROR_TXT.format(e))
 
     elif query.data.startswith("ext_f"):
         spl_data = query.data.split("|")
