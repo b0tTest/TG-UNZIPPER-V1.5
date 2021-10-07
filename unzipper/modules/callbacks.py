@@ -111,7 +111,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
                 shutil.rmtree(download_path)
                 await s.close()
             except Exception as e:
-                print(e)
+                #print(e)
                 await query.message.edit(Messages.ERROR_TXT.format(e))
 
     elif query.data.startswith("ext_f"):
