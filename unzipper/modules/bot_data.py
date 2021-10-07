@@ -8,8 +8,12 @@ class Buttons:
     START_BUTTON=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Help 📜", callback_data="helpcallback"),
-                InlineKeyboardButton("About ⁉️", callback_data="aboutcallback")
+                InlineKeyboardButton("👤 Creator", url="https://telegram.me/OO7ROBOT"),
+                InlineKeyboardButton("🤖 OtherBotZ", url="https://telegram.me/mybotzlist")
+            ],[
+                InlineKeyboardButton("⚙️ Help", callback_data="helpcallback"),
+                InlineKeyboardButton("📝 About", callback_data="aboutcallback"),
+                InlineKeyboardButton("⛔ Cancel", callback_data="close")
             ]
         ]
     )
@@ -25,7 +29,7 @@ class Buttons:
                 InlineKeyboardButton("🔗 (Password) Url Extract 📂", callback_data="extract_file|url|with_pass")
             ],
             [
-                InlineKeyboardButton("Cancel ❌", callback_data="cancel_dis")
+                InlineKeyboardButton("⛔ Cancel 🔐", callback_data="cancel_dis")
             ]
         ]
     )
@@ -44,103 +48,85 @@ class Buttons:
     ME_GOIN_HOME=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Back 🏡", callback_data="megoinhome")
+                InlineKeyboardButton("Back to Home 🏡", callback_data="megoinhome")
             ]
         ]
     )
 
 
+
+
 class Messages:
     START_TEXT = """
-Hi **{}**, I'm **Nexa Unzipper Bot** 😇!
-
-`I can extract archives like zip, rar, tar etc.`
-
-**Made with ❤️ by @NexaBotsUpdates**
+Hi 👋 **{}**,
+__a Simple  Telegram__ **Unzipper Bot**🗳️\n__to Extract Various Types Of Archive like rar, zip, tar, 7z, tar.xz etc..__
+**Made with ❤️ by @MyTestBotZ**
     """
 
     HELP_TXT = """
-**How To Extract? 🤔**
-
-`1. Send the file or link that you want to extract.`
-`2. Click on extract button (If you sent a link use "Url Extract" button. If it's a file just use "File Extract" button).`
-
-
+**How To Extract? 🤔🤔🤔**
+__1. Send the file that you want to extract.
+2. Click on extract button.
+3. wait for starting the Process..__
 **Note:**
-    **1.** `If your archive is password protected select` **(Password) Extract 📂** `mode. Bot isn't a GOD to know your file's password so If this happens just send that password!`
+    **1.** __If your archive is password protected select__ **(Password) Extract🗳️** __mode. Bot isn't a GOD to know your file's password so If this happens just send that password!__
     
-    **2.** `Please don't send corrupted files! If you sent a one by a mistake just send` **/clean** `command!`
-    
-    **3.** `If your archive have 95 or more files in it then bot can't show all of extracted files to select from. So in that case if you can't see your file in the buttons just click on` "Upload All ♻️" `button. It'll send all extracted files to you!`
+    **2.** __Please don't send corrupted files! If you sent a one by a mistake just send__ ** /clean** __command!__
     """
 
     ABOUT_TXT = """
-**About Nexa Unzipper Bot,**
-
-✘ **Language:** [Python](https://www.python.org/)
-✘ **Framework:** [Pyrogram](https://docs.pyrogram.org/)
-✘ **Source Code:** [Itz-fork/Unzipper-Bot](https://github.com/Itz-fork/Unzipper-Bot)
-✘ **Developer:** [Itz-fork](https://github.com/Itz-fork)
-
-
-**Made with ❤️ by @NexaBotsUpdates**
+**@TG_UnzipperBot**
+✪ » **Creator :** [Meeeee...](https://telegram.me/OO7ROBot)
+✪ » **Channel:** [MyTestBotZ](https://telegram.me/MyTestBotZ)
+✪ » **Other Bots:** [Other BotZ](https://telegram.me/mybotzlist)
+✪ » **Language:** [Python](https://www.python.org/)
+✪ » **Framework:** [Pyrogram](https://docs.pyrogram.org/)
+✪ » **Dev: Itz-fork**
+✪ » **Build Version: V1**
     """
 
     LOG_TXT = """
 **Extract Log 📝!**
-
 **User ID:** `{}`
 **File Name:** `{}`
 **File Size:** `{}`
     """
 
     AFTER_OK_DL_TXT = """
-**Successfully Downloaded**
-
+**✅ Successfully Downloaded 📥**
 **Download time:** `{}`
 **Status:** `Trying to extract the archive`
+**© @TG_UnZipperbot**
     """
 
     EXT_OK_TXT = """
-**Extraction Successfull!**
-
+**☑️ Extraction Successfull! 😌😌**
 **Extraction time:** `{}`
-**Status:** `Trying to upload`
+**Status:** `Trying to upload 📤`
     """
 
     EXT_FAILED_TXT = """
 **Extraction Failed 😕!**
-
 **What to do?**
-
- - `Please make sure archive isn't corrupted`
- - `Please make sure that you selected the right mode!`
- - `May be Your archive format isn't supported 😔`
-
-**Please report this at @Nexa_bots if you think this is a serious error**
+ - Please make sure archive isn't corrupted
+ - Please make sure that you selected the right mode!
+ - May be Your archive format isn't supported 😔
     """
 
     ERROR_TXT = """
 **Error Happend 😕!**
-
 **ERROR:** {}
-
-
-**Please report this at @Nexa_bots if you think this is a serious error**
     """
 
     CANCELLED_TXT = """
 **{} ✅!**
-
 `Now all of your files have been deleted from my server 😏!`
     """
 
     CLEAN_TXT = """
 **Are sure want to delete your files from my server 🤔?**
-
 **Note:** `This action cannot be undone!`
     """
-
 
 # List of error messages from p7zip
 ERROR_MSGS = [
