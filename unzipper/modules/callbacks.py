@@ -134,7 +134,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
         await query.message.edit("`Refreshing ⏳...`")
         rpaths = get_files(path=file_path)
         i_e_buttons = await make_keyboard(paths=rpaths, user_id=query.from_user.id, chat_id=query.message.chat.id)
-        await query.message.edit("**Select Files to Upload!**\n\n**© @TG_UnZipperbot", reply_markup=i_e_buttons)
+        await query.message.edit("**Select Files to Upload!**\n\n**© @TG_UnZipperbot**", reply_markup=i_e_buttons)
 
     
     elif query.data.startswith("ext_a"):
