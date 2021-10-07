@@ -65,9 +65,12 @@ __a Simple  Telegram__ **Unzipper Bot**🗳️\n__to Extract Various Types Of Ar
 
     HELP_TXT = """
 **How To Extract? 🤔🤔🤔**
-__1. Send the file that you want to extract.
-2. Click on extract button.
+
+__1. Send the File or Link that you want to Extract.
+2. Click on extract button
+      (If you sent a link use "Url Extract" button. If it's a File just use "File Extract" button).
 3. wait for starting the Process..__
+
 **Note:**
     **1.** __If your archive is password protected select__ **(Password) Extract🗳️** __mode. Bot isn't a GOD to know your file's password so If this happens just send that password!__
     
@@ -94,8 +97,10 @@ __1. Send the file that you want to extract.
 
     AFTER_OK_DL_TXT = """
 **✅ Successfully Downloaded 📥**
+
 **Download time:** `{}`
 **Status:** `Trying to extract the archive`
+
 **© @TG_UnZipperbot**
     """
 
