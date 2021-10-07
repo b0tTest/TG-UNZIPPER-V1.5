@@ -60,6 +60,8 @@ class Messages:
     START_TEXT = """
 Hi 👋 **{}**,
 __a Simple  Telegram__ **Unzipper Bot**🗳️\n__to Extract Various Types Of Archive like rar, zip, tar, 7z, tar.xz etc..__
+» __Support Archive Url Link too__
+
 **Made with ❤️ by @MyTestBotZ**
     """
 
